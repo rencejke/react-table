@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    table {
+        @apply max-w-[1300px]  w-full mx-auto mt-10
+    }
+
+    table tr td,
+    table tr th {
+        @apply p-1
+    }
+
+    table thead tr, 
+    table tfoot tr { 
+        @apply border-b border-gray-200 
+    }
+
+    table thead tr th,
+    table tfoot tr th{ 
+        @apply text-left
+    }
+
+
+    table tbody tr:nth-child(even) {
+        @apply bg-gray-100
+    }
+  
+    .search {
+        @apply p-2 bg-green-700 text-center 
+    }
+
+    .search input {
+        @apply p-1 border border-green-900 rounded w-[500px] outline-none 
+    }
+
+}
